@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto:ital@1&display=swap');
+
+
+@media (max-width: 1023px) {
+    .mainMenu {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        justify-content: center;
+        flex-direction: column;
+        position: absolute;
+        top: 10px;
+        left: 0;
+        width: 100%;
+        transition: top 0.7s ease-in;
+        background-color: rgb(15, 118, 110);
+    }
+    .mainMenu ul li{
+        padding: 9px 7px;
+    }
+    .openMenu, .closeMenu {
+        justify-content: center;
+    }
+    .closeMenu {
+        padding-top: 20px;
+    }
+}
+
+.inter {
+    font-family: 'Inter', sans-serif;
+}
+
+
+.glass-smooth{
+    background-color: rgba(199, 206, 200, 0.3);
+    backdrop-filter: blur(2px);
+}
+
+.btn {
+    transition: all;
+    transition-delay: 150ms;
+    transition-duration: 100ms;
+    transition-timing-function: ease-in-out;
+}
+
+.cont:hover .btn {
+    visibility: visible;
+    z-index: 1;
+} 
